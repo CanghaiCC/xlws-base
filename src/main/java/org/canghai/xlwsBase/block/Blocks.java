@@ -32,7 +32,7 @@ public class Blocks {
     // 开始添加方块。
     // 炼丹炉。
     public static final Block ALCHEMY_FURNACE = register(
-            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE)),
+            new AlchemyFurnaceBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE)),
             "alchemy_furnace"
     );
 

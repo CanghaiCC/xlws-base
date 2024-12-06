@@ -25,7 +25,6 @@ import java.util.*;
  */
 public class Items {
     private static final Map<String, List<ItemStack>> itemMap = new HashMap<>();
-
     // 注册。
     public static Item register(Item item, String id) {
         Identifier itemID = new Identifier(XlwsBase.MOD_ID, id);

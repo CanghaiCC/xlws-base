@@ -2,6 +2,7 @@ package org.canghai.xlwsBase;
 
 import net.fabricmc.api.ModInitializer;
 import org.canghai.xlwsBase.block.Blocks;
+import org.canghai.xlwsBase.block.entity.BlockEntityTypes;
 import org.canghai.xlwsBase.component.Components;
 import org.canghai.xlwsBase.event.ModEventListener;
 import org.canghai.xlwsBase.item.Items;
@@ -21,5 +22,7 @@ public class XlwsBase implements ModInitializer {
         Components.initialize();
         // 加载所有监听器
         ModEventListener.registerEvents();
+        // 加载BlockEntity类中的所有成员
+        BlockEntityTypes.initialize();
     }
 }
